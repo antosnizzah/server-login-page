@@ -1,0 +1,73 @@
+/* App.css */
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('/src/assets/DALL·E\ 2024-10-31\ 10.37.22\ -\ Create\ a\ digital\ landscape\ background\ featuring\ a\ surreal\ mountain\ scene\ reflected\ in\ a\ calm\ lake\ under\ a\ vibrant\ twilight\ sky.\ Show\ mountains\ with\ sh.webp'); /* Adjust path */
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7); /* Slightly darken background for contrast */
+}
+
+.login-box {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 20rem;
+  width: 100%;
+  border: 2px solid #ffffffef; 
+  overflow: hidden;
+}
+
+
+
+.input-field-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: rgba(143, 54, 54, 0.3);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color:2px solid #ffffff;
+}
+
+.input-field {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.input-field::placeholder {
+  color: #d1d1d1;
+}
+
+.checkbox-label, .register-link {
+  color: #ffffff;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+}
