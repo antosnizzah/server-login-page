@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLock, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
@@ -42,6 +42,22 @@ const App = () => {
                 onClick={togglePasswordVisibility}
               />
             </div>
+          </div>
+          <div className="mb-4">
+            <label className="text-white block mb-1">Confirm Password</label>
+            <div className="input-field-wrapper">
+              <FontAwesomeIcon icon={faLock} className="text-white mr-2" />
+              <input
+              type={showPassword ? "text" : "password"}
+              className="input-field"
+              placeholder="Confirm your password"
+              />
+              <FontAwesomeIcon
+              icon={showPassword ? faEyeSlash : faEye}
+              className="text-white ml-2 cursor-pointer"
+              onClick={togglePasswordVisibility}
+              />
+            </div> 
           </div>
           <div className="flex justify-between items-center mb-6">
             <label className="checkbox-label">
